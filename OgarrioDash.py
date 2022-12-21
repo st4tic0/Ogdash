@@ -27,8 +27,8 @@ import plotly.graph_objs as go
 
 #####lgoos added to the dashboard
 APP_TITLE = "Ogarrio Data"
-img=Image.open('images\wdealogo2.png')
-img1=Image.open('images\wdealogo.png')
+img=Image.open('images/wdealogo2.png')
+img1=Image.open('images/wdealogo.png')
 st.set_page_config(
     page_title = APP_TITLE,
     page_icon = img1,
@@ -62,7 +62,7 @@ def prod_data(path4):
 	#prod_df['Date'] = pd.to_datetime(prod_df['Date'])
 	return wells_df
 	
-wells = prod_data(r'data\ogarrio_wells.csv')
+wells = prod_data(r'data/ogarrio_wells.csv')
 st.cache(wells)
 
 #################### MAPA Y TABLA ####################
